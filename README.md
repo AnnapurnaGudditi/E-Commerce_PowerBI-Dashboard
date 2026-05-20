@@ -1,8 +1,12 @@
 # 🛒 E-Commerce Sales Performance Dashboard
 
+[![GitHub stars](https://img.shields.io/github/stars/AnnapurnaGudditi/E-Commerce_PowerBI-Dashboard?style=social)](https://github.com/AnnapurnaGudditi/E-Commerce_PowerBI-Dashboard)
+[![GitHub forks](https://img.shields.io/github/forks/AnnapurnaGudditi/E-Commerce_PowerBI-Dashboard?style=social)](https://github.com/AnnapurnaGudditi/E-Commerce_PowerBI-Dashboard)
+[![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
+
 ## 📋 Overview
 
-An interactive and comprehensive sales dashboard built in **Power BI Desktop** that analyzes Indian e-commerce data spanning 2018-2019. This dashboard provides actionable business intelligence for sales performance tracking, profit analysis, and regional performance monitoring across multiple product categories.
+An interactive and comprehensive sales dashboard built in **Power BI Desktop** that analyzes Indian e-commerce data spanning 2018-2019. This dashboard provides actionable business intelligence through dynamic visualizations, advanced DAX calculations, and real-time KPI tracking. Designed for business analysts, sales managers, and stakeholders to make data-driven decisions with ease.
 
 **Time Period:** January 2018 - December 2019  
 **Geography:** 19 Indian States  
@@ -12,23 +16,33 @@ An interactive and comprehensive sales dashboard built in **Power BI Desktop** t
 
 ## 🛠️ Tools & Technologies Used
 
-| Tool | Purpose |
-|------|---------|
-| **Power BI Desktop** | Dashboard creation & visualization |
-| **DAX** | Advanced calculations & measure creation |
-| **Power Query** | Data transformation & cleaning |
+| Tool | Purpose | Version |
+|------|---------|---------|
+| **Power BI Desktop** | Dashboard creation & visualization | 2020.12+ |
+| **DAX** | Advanced calculations & measure creation | Latest |
+| **Power Query** | Data transformation & cleaning | Built-in |
+| **Excel** | Data source format | .xlsx |
 
 ---
 
 ## 📊 Dataset Information
 
-**Source:** [E-Commerce Dataset from Kaggle](https://www.kaggle.com/datasets/)
+**Source:** [E-Commerce Dataset from Kaggle](https://www.kaggle.com/datasets/beninato/e-commerce-data)
 
 - **Total Orders:** 560
 - **Order Line Items:** 1,500+
 - **Geographic Coverage:** 19 Indian states
-- **Product Categories:** 3 main categories
+- **Product Categories:** 3 main categories (Clothing, Electronics, Furniture)
 - **Time Span:** 24 months (2018-2019)
+- **File Format:** .xlsx (Excel workbook)
+
+---
+
+## 🎨 Dashboard Preview
+
+![Dashboard Preview](Ecommerce_Sales_Dashboard.png)
+
+*Comprehensive overview showing KPIs, sales trends, category breakdown, and geographic performance*
 
 ---
 
@@ -39,15 +53,17 @@ An interactive and comprehensive sales dashboard built in **Power BI Desktop** t
 - 💰 **Profit Card** - Total profit earned
 - 📦 **Orders Card** - Total number of orders
 - 🎯 **Target Achievement %** - Performance vs. targets
+- 🔢 **Additional Metrics** - Profit margin, Avg order value
 
 ### Visualizations
 - 📊 **Sales by Category** - Bar chart breakdown of revenue by product category
 - 🏆 **Top 10 Sub-Categories by Profit** - Identifies most profitable sub-categories
 - 📈 **Monthly Revenue vs Target** - Line chart showing trend analysis and performance against targets
-- 🗺️ **Top 10 States by Revenue** - Geographic performance analysis
+- 🗺️ **Top 10 States by Revenue** - Geographic performance analysis with state-wise drill-down
 - 👥 **Top 10 Customers by Revenue** - Customer value segmentation
 - 🍰 **Profit Share Donut Chart** - Distribution of profit across categories
 - 🎚️ **Interactive Slicers** - Year, Category, and State filters for dynamic analysis
+- 📅 **Temporal Analysis** - Monthly and seasonal trend patterns
 
 ---
 
@@ -67,6 +83,8 @@ An interactive and comprehensive sales dashboard built in **Power BI Desktop** t
 3. **Profit margin of 5.55%** indicates room for cost optimization
 4. **Top 10 customers** likely contribute 30-40% of total revenue (concentration risk)
 5. **Seasonal patterns** visible in monthly revenue trends - peak seasons identified
+6. **Electronics category** shows highest profit margin despite lower revenue
+7. **Regional disparities** indicate opportunities for targeted expansion strategies
 
 ---
 
@@ -82,46 +100,77 @@ The following calculated measures provide deep analytical insights:
 ✓ Avg Order Value       - Average revenue per order
 ✓ Target Achievement %  - Actual vs. Target performance
 ✓ Total Target          - Aggregate target metric
+✓ YoY Growth %          - Year-over-year comparison
+✓ Revenue CAGR          - Compound annual growth rate
 ```
 
 ---
 
-## 🚀 How to Use the Dashboard
+## 🚀 Getting Started
+
+### Prerequisites
+- **Power BI Desktop** (Version 2020.12 or later) - [Download Here](https://powerbi.microsoft.com/en-us/downloads/)
+- **.pbix file** (Power BI project file)
+- **Display Resolution:** 1920x1080 or higher for optimal viewing
+- **RAM:** 4GB minimum (8GB recommended)
+
+### Installation Steps
+
+1. **Clone or Download the Repository**
+   ```bash
+   git clone https://github.com/AnnapurnaGudditi/E-Commerce_PowerBI-Dashboard.git
+   cd E-Commerce_PowerBI-Dashboard
+   ```
+
+2. **Download Power BI Desktop** (if not already installed)
+   - Visit [Microsoft Power BI](https://powerbi.microsoft.com/en-us/downloads/)
+   - Install the latest version
+
+3. **Open the Dashboard File**
+   - Navigate to the repository folder
+   - Double-click `Ecommerce_Sales_Dashboard.pbix`
+   - Wait for Power BI Desktop to load the file
+
+4. **Configure Data Connection** (if needed)
+   - Click on "Transform Data" → "Data Source Settings"
+   - Update file path if you've moved the data files
+
+5. **Refresh Data**
+   - Press `Ctrl + R` or click Refresh button to load latest data
+
+---
+
+## 📖 How to Use the Dashboard
 
 1. **Open the File:** Launch `Ecommerce_Sales_Dashboard.pbix` in Power BI Desktop
 2. **Interact with Slicers:** Use the Year, Category, and State filters to drill down into specific data
-3. **Hover for Details:** Hover over visualizations to see detailed tooltips
-4. **Export Reports:** Use Power BI's export features to share insights with stakeholders
-5. **Refresh Data:** Update the data connection if using a live data source
+3. **Hover for Details:** Hover over visualizations to see detailed tooltips with exact values
+4. **Cross-Filter:** Click on any visual to filter the entire dashboard
+5. **Export Reports:** Use Power BI's export features (PDF, PowerPoint) to share insights with stakeholders
+6. **Refresh Data:** Update the data connection if using a live data source
+7. **Bookmark Views:** Save custom views for quick access to specific analyses
 
 ---
 
 ## 📁 Files Included
 
-| File | Description |
-|------|-------------|
-| `Ecommerce_Sales_Dashboard.pbix` | Main Power BI dashboard file |
-| `Ecommerce_Sales_Dashboard.pdf` | Static PDF export of the dashboard |
-| `Ecommerce_Sales_Dashboard.png` | Dashboard screenshot/preview |
-| `README.md` | Project documentation (this file) |
-
----
-
-## ⚙️ Requirements
-
-- **Power BI Desktop** (Version 2020.12 or later recommended)
-- **.pbix file** compatible with your Power BI version
-- **Display Resolution:** 1920x1080 or higher for optimal viewing
+| File | Description | Size |
+|------|-------------|------|
+| `Ecommerce_Sales_Dashboard.pbix` | Main Power BI dashboard file | ~2.5 MB |
+| `Ecommerce_Sales_Dashboard.pdf` | Static PDF export of the dashboard | ~5 MB |
+| `Ecommerce_Sales_Dashboard.png` | Dashboard screenshot/preview | ~500 KB |
+| `README.md` | Project documentation (this file) | - |
+| `LICENSE` | Project license file | - |
 
 ---
 
 ## 📈 Dashboard Pages/Sections
 
-1. **Overview Page** - High-level KPIs and key metrics
-2. **Category Analysis** - Detailed breakdown by product category
-3. **Geographic Analysis** - State-wise performance metrics
-4. **Customer Analysis** - Top customers and revenue contribution
-5. **Trend Analysis** - Monthly trends and seasonal patterns
+1. **Overview Page** - High-level KPIs and key metrics at a glance
+2. **Category Analysis** - Detailed breakdown by product category with sub-category performance
+3. **Geographic Analysis** - State-wise performance metrics and regional comparisons
+4. **Customer Analysis** - Top customers, revenue contribution, and customer segmentation
+5. **Trend Analysis** - Monthly trends, seasonal patterns, and YoY growth comparisons
 
 ---
 
@@ -132,14 +181,56 @@ The following calculated measures provide deep analytical insights:
 - **Regional Strategy:** Analyze state-level performance for targeted campaigns
 - **Customer Insights:** Identify top-performing customers and segments
 - **Forecasting:** Use historical trends for future planning and target setting
+- **Board Presentations:** Generate executive summaries and strategic reports
+- **Performance Reviews:** Benchmark team and regional performance
+
+---
+
+## ⚠️ Limitations & Assumptions
+
+- **Data Period:** Limited to 2018-2019 data; historical patterns may not reflect current market trends
+- **Static Dataset:** Currently uses static Kaggle dataset; real-time data updates require manual refresh
+- **Geographic Scope:** Limited to 19 Indian states; other regions not covered
+- **Product Categories:** Only 3 main categories represented in the dataset
+- **Data Quality:** Some potential missing values or outliers in the raw data
+- **Profit Calculation:** Profit figures may not account for all overhead costs
 
 ---
 
 ## 🔍 Data Refresh & Maintenance
 
-- **Data Source:** Currently uses static Kaggle dataset
-- **Refresh Frequency:** Manual (can be set to automatic if connected to live source)
+- **Data Source:** Currently uses static Kaggle dataset (Excel file)
+- **Refresh Frequency:** Manual (can be set to automatic if connected to live SQL/cloud source)
 - **Last Updated:** May 2026
+- **Next Update:** Scheduled for quarterly reviews
+- **Maintenance:** Regular checks for data quality and formula accuracy
+
+---
+
+## ❓ Troubleshooting
+
+### Issue: "Data source not found" error
+**Solution:** 
+- Check if the Excel data file is in the same directory as the .pbix file
+- Navigate to "Transform Data" → "Data Source Settings" and update the file path
+
+### Issue: Dashboard loads slowly
+**Solution:**
+- Reduce the time period in slicers to filter data
+- Upgrade Power BI Desktop to the latest version
+- Ensure sufficient RAM available (8GB recommended)
+
+### Issue: Visualizations not showing data
+**Solution:**
+- Click "Refresh" button to reload data
+- Check Power BI error messages (View → Performance Analyzer)
+- Verify Excel file is not corrupted or locked
+
+### Issue: Slicers not filtering properly
+**Solution:**
+- Clear all filters and start fresh
+- Check the slicer relationships in Power BI model
+- Ensure data types are consistent across tables
 
 ---
 
@@ -147,29 +238,56 @@ The following calculated measures provide deep analytical insights:
 
 **Created by:** Annapurna Gudditi  
 **GitHub:** [@AnnapurnaGudditi](https://github.com/AnnapurnaGudditi)  
-**Repository:** [E-Commerce_PowerBI-Dashboard](https://github.com/AnnapurnaGudditi/E-Commerce_PowerBI-Dashboard)
+**Repository:** [E-Commerce_PowerBI-Dashboard](https://github.com/AnnapurnaGudditi/E-Commerce_PowerBI-Dashboard)  
+**Email:** [Your Email] (Optional)
 
 ---
 
 ## 📝 License
 
-This project is open source and available for educational and commercial use.
+This project is open source and available under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
 ## 🤝 Contributing
 
-Contributions and suggestions are welcome! Feel free to fork this repository or open an issue with your feedback.
+Contributions and suggestions are welcome! Here's how you can help:
+
+1. **Fork** the repository
+2. **Create** a new branch for your feature (`git checkout -b feature/AmazingFeature`)
+3. **Commit** your changes (`git commit -m 'Add some AmazingFeature'`)
+4. **Push** to the branch (`git push origin feature/AmazingFeature`)
+5. **Open** a Pull Request
+
+### Contribution Ideas
+- Add new visualizations or dashboards
+- Improve data quality and transformations
+- Enhance documentation
+- Suggest new KPIs or metrics
 
 ---
 
-## 📚 Additional Resources
+## 📚 Additional Resources & References
 
 - [Power BI Documentation](https://docs.microsoft.com/en-us/power-bi/)
 - [DAX Function Reference](https://dax.guide/)
 - [Power BI Best Practices](https://learn.microsoft.com/en-us/power-bi/guidance/)
+- [Kaggle E-Commerce Dataset](https://www.kaggle.com/datasets/beninato/e-commerce-data)
+- [Power BI Community Forums](https://community.powerbi.com/)
+
+---
+
+## 🔗 Related Projects
+
+- [Sales Analytics Dashboard](https://github.com/AnnapurnaGudditi) (Optional - link to other projects)
+- [Customer Segmentation Analysis](https://github.com/AnnapurnaGudditi) (Optional)
 
 ---
 
 **Last Updated:** May 2026  
-**Status:** ✅ Active & Maintained
+**Status:** ✅ Active & Maintained  
+**Version:** 2.0
+
+---
+
+⭐ If you found this helpful, please consider giving it a star! ⭐
